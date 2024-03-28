@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -14,8 +14,7 @@ body{
     overflow: scroll;
     background-image: linear-gradient(to bottom right, #040404, #161618);
     --scrollbar-width: 15px; --scrollbar-height: 0px; --scrollbar-border-radius: 6px; --scrollbar-border-thickness: 0px; --show-double-buttons: none; --scrollbar-thumb-color: #313132; --scrollbar-track-color: #161618; --scrollbar-corner-color: #313132; --scrollbar-border-color: #313132; } body::-webkit-scrollbar { width: var(--scrollbar-width, 20px); height: var(--scrollbar-height, 20px); }body::-webkit-scrollbar-thumb { background: var(--scrollbar-thumb-color, #3B82F6); border: var(--scrollbar-border-thickness, 3px) solid var(--scrollbar-border-color, rgb(255, 255, 255)); border-radius: var(--scrollbar-border-radius, 4px); }body::-webkit-scrollbar-track { background: var(--scrollbar-track-color, #A1A1AA); }body::-webkit-scrollbar-corner { background: var(--scrollbar-corner-color, #FFFFFF); border: var(--scrollbar-border-thickness, 3px) solid var(--scrollbar-border-color, rgb(255, 255, 255)); border-radius: var(--scrollbar-border-radius, 4px); }body::-webkit-scrollbar-button:vertical:start:increment, #preview::-webkit-scrollbar-button:vertical:end:decrement, #preview::-webkit-scrollbar-button:horizontal:start:increment, #preview::-webkit-scrollbar-button:horizontal:end:decrement { display: var(--show-double-buttons, none);
-    
-    
+
 }
 .radial{
     width: 31rem;
@@ -117,57 +116,48 @@ button:hover{
     letter-spacing: .0625rem;
     cursor: pointer;  
 }
-.logos-slides{
-    animation-name: slide;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    transition-delay: -30s;
-}
-
-@keyframes slide{
-    from{
-        transform: translate(0);
-    }
-    to{
-        transform: translate(-100%);
-    }
-}
 .logos{
     color: #292926;
     overflow: hidden;
-    margin-left: 3.75rem;
-    margin-right: 3.75rem;
+    margin-left: 7.5rem;
+    margin-right: 7.5rem;
     text-align: center;
     font-size: large;
     font-weight: 900px;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-
 }
 .logos-slides{
+    margin-left: 25rem;
+    margin-right: 7.5rem;
     white-space: nowrap;
-    animation: 40s slide;
+    -webkit-animation: scroll 10s linear infinite;
+    animation: scroll 10s linear infinite;
     font-size: 3.125rem;
     word-spacing: 2.5rem;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-
-
 }
 
-.mainn{
-    width: 100%;
-    height: auto;
-    background-color: rgb(red, green, blue);
-    font-family: poppins;
+@keyframes scroll {
+    0% {
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+    100% {
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
 }
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
-}
+
+
+
+
+/*TIMELINE*/
+/*TIMELINE*/
+/*TIMELINE*/
+/*TIMELINE*/
+/*TIMELINE*/
+/*TIMELINE*/
+
+
+
 
 .MAINN{
     width: 100%;
@@ -179,7 +169,6 @@ button:hover{
     font-family: "Poppins", sans-serif;
     font-weight: 100;
     font-style: normal;
-
 }
 
 .MAINN .HEADINGG{
@@ -291,8 +280,7 @@ ul li .date{
     border-radius: 50%;
     background-color:#BC3CCC;
     position: relative;
-    top: 0;
-    
+
 }
 .container ul li .circle::after{
     content: ' ';
@@ -327,6 +315,9 @@ ul li .date{
     .container{
         width: 80%;
     }
+    nav{
+        opacity: 0%;
+    }
 
 .container ul li{
     width:100% ;
@@ -351,7 +342,7 @@ ul li .date{
 }
 .timeline{
     width: 100%;
-    height: 800px;
+    height: 62.5rem;
 
 }
 
@@ -370,12 +361,256 @@ ul li .date{
     .container ul li:nth-child(odd) .circle{
         right: -1.875rem;
     }
-    
-
-
-
 
 }
+
+
+
+
+/* CONTACTO */
+/* CONTACTO */
+/* CONTACTO */
+/* CONTACTO */
+/* CONTACTO */
+/* CONTACTO */
+
+
+
+
+.form-register {
+    width: 400px;
+    margin-bottom: 2.5rem;
+    background: #121212;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+  }
+  
+  .form-register h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  
+  .controls {
+    width: 100%;
+    background: #121212;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #5d04d5;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+    position: relative;
+  }
+  
+  .form-register p {
+    font-family: "poppins";
+    height: 30px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  
+  .form-register a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .form-register a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+  
+  .form-register .botons {
+    width: 100%;
+    background: #5d04d5;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .form-register .botons:hover{
+    animation-delay: 1ms;
+    box-shadow: #8D17C8;
+  }
+  h4{
+    display: flex;
+    justify-content: center;
+    color: #5d04d5;
+  }
+  h1{
+    font-size: 3.75rem;
+    background-image: linear-gradient(to bottom,#5d04d5 ,#BC3CCC);
+    background-clip: text;
+    color: transparent;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+  }
+  .form-register .controlss{
+    width: 100%;
+    height: 18.75rem;
+    background: #121212;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #5d04d5;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: #1a1a1b;
+    position: relative;
+  }
+  .form-register .controlss::placeholder{
+    display: flex;
+    justify-content: flex-start;
+    top: 0px;
+    flex-wrap: wrap;
+    white-space: normal; 
+    
+  }
+  .Oficinas{
+    
+    left: .625rem;
+    margin-top: 1.25rem;
+    font-size: .9375rem;
+    white-space: line;
+    color:#2e2e30;
+  }
+  .Oficinas h3{
+    display: flex;
+    justify-content: center;
+  }
+  .direccion{
+display: flex;
+  flex-direction: column; 
+  align-items: center;
+  height: .9375rem; 
+  
+}
+@media (width < 900px){
+  h1{
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+  }
+  .oficinas .direccion p{
+    color: #2e2c2c;
+    width: 100%;
+    text-wrap: wrap;
+    text-align: center;
+  }
+  .form-register{
+    width: 100%;
+    overflow: wrap;
+  }
+}
+
+
+
+
+
+
+/* SERVICIOS */
+/* SERVICIOS */
+/* SERVICIOS */
+/* SERVICIOS */
+/* SERVICIOS */
+/* SERVICIOS */
+
+
+
+
+.heros{
+    width: 100%;
+    height: 100%;
+    margin-top: 3.125rem;
+    padding:0 5% ;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    justify-content:center ;
+    margin-bottom: 4.375rem;
+}
+.homes{
+    margin-top: 60px;
+    text-transform: uppercase;
+    font-size: 3.25rem;
+    font-weight: 600;
+    
+}
+.h1s{
+    padding: .625rem;
+    text-transform: uppercase;
+    line-height: 100%;
+    font-size: 3.4375rem;
+    background-image: linear-gradient(to bottom,#5d04d5 ,#BC3CCC);
+    background-clip: text;
+    color: transparent;
+    left: 5rem;
+}
+
+.contenedor-acordeon{
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    max-width: 600px;
+    margin: auto;
+    margin-top: auto;
+}
+.contenedor-acordeon h2{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 35px;
+    color: #292926;
+}
+.acordeon{
+    background: #292926;
+}
+.acordeon label{
+    display: block;
+    padding: 20px;
+    font-size: 25px;
+    background: #161618;
+    color: #5d04d5;
+    cursor: pointer;
+    margin-bottom: 2px;
+    transition: all 300ms ease;
+}
+.acordeon label:hover{
+    background: #2e2e2e;
+}
+.acordeon .contenido-acordeon{
+    padding: 0px;
+    margin: 0px 20px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 300ms ease;
+}
+.btn-acordeon:checked ~ .contenido-acordeon{
+    max-height: 600px;
+    padding: 15px 0px;
+}
+.btn-acordeon{
+    display: none;
+}
+p{
+    color: white;
+    font-size: 1.25rem;
+}
+section{
+    border-radius: 5px;
+}
+@media (width < 900px){
+    
+}
+
 
 
 
